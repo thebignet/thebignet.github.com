@@ -1,69 +1,240 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Thebignet.github.com : " />
+    <meta charset="utf-8">
+    <title>Jean Detoeuf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
 
-    <title>Thebignet.github.com</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/thebignet">View on GitHub</a>
+    <div class="container">
 
-          <h1 id="project_title">Thebignet.github.com</h1>
-          <h2 id="project_tagline"></h2>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <img src="img/logo-open.png" />
+        <h1>Jean Detoeuf</h1>
+        <p>Je suis consultant Open dans les technologies du monde Java EE et du Web.</p>
+        <p>Cette page a pour but de me présenter et de centraliser toutes les références me concernant.</p>
+      </div>
 
-        </header>
-    </div>
+      <div class="subnav">
+  	    <ul class="nav nav-pills">
+  	      <li><a href="#contacts">Contacts</a></li>
+  	      <li><a href="#pubs">Publications</a></li>
+  	      <li><a href="#bio">Biographie</a></li>
+          <li><a href="#about">A propos</a></li>
+  	    </ul>
+      </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      <section id="contacts">
+        <div class="row">
+          <div class="span12">
+            <div class="page-header">
+              <h1>Contacts <small>Toutes les références sociales</small></h1>  
+            </div>
+            <table class="table table-bordered table-condensed">
+              <tr>
+                <th><img src="img/contacts/logo-gmail.png" /></th>
+                <td><a href="mailto:">thebignet at gmail dot com</a></td>
+                <td>La boite mail que je consulte quotidiennement</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-twitter.png" /></th>
+                <td><a href="https://twitter.com/thebignet" target="_blank">@thebignet</a></td>
+                <td>Je fais part de mes découvertes du net, que ça soit sur de la veille technologique que sur des sujets de société</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-github.png" /></th>
+                <td><a href="https://github.com/thebignet" target="_blank">thebignet</a></td>
+                <td>Mon endroit pour publier des projets que je souhaite partager</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-linkedin.png" /></th>
+                <td><a href="http://lnkd.in/Xrsazj" target="_blank">Jean Detoeuf</a></td>
+                <td>Profil LinkedIn</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-viadeo.png" /></th>
+                <td><a href="http://www.viadeo.com/fr/profile/jean.detoeuf" target="_blank">Jean Detoeuf</a></td>
+                <td>Profil Viadeo</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-facebook.png" /></th>
+                <td><a href="https://www.facebook.com/jean.detoeuf" target="_blank">Jean Detoeuf</a></td>
+                <td>Profil Facebook</td>
+              </tr>
+              <tr>
+                <th><img src="img/contacts/logo-googleplus.png" /></th>
+                <td><a href="https://plus.google.com/102985277746701355604/" target="_blank">Jean Detoeuf</td>
+                <td>Profil Google Plus</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <section id="pubs">
+        <div class="row">
+          <div class="span12">
+            <div class="page-header">
+              <h1>Publications <small>Twitter et articles</small></h1>  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6 tweets">
+            <script id="twitter-template" type="text/x-undrescore-tmpl">
+              <table class="table">
+                <tr><th colspan="2">Twitter</th></tr>
+                <% _.each(data, function(tweet) { %>
+                  <tr>
+                    <td><img src="<%= tweet.user.profile_image_url %>"></td>
+                    <td><%= tweet.text %></td>
+                  </tr>
+                <% }); %>
+              </table>
+            </script>
+          </div>
+        </div>
+      </section>
+      <section id="bio">
+        <div class="row">
+          <div class="span12">
+            <div class="page-header">
+              <h1>Biographie <small>Mon CV</small></h1>  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <table class="table table-bordered">
+              <tr>
+                <th><img alt="Open" src="img/bio/logo-open.png"/></th>
+                <th><h2>Consultant JEE / Web</h2></th>
+              </tr>
+              <tr>
+                <td>Depuis Janvier 2011</td>
+                <td>
+                  <p>Intégration d'une équipe de développement.</p>
+                  <p>Technologies : Java EE, Spring, Struts, JPA, Hibernate, jQuery, Backbone.js, Eclipse, Maven, MySQL, Oracle.</p>
+                </td>
+              </tr>
+              <tr>
+                <th><img alt="Atos Worldline" src="img/bio/logo-atosworldline.png"/></th>
+                <th><h2>Développeur / Expert</h2></th>
+              </tr>
+              <tr>
+                <td>Octobre 2009 à Décembre 2010</td>
+                <td>
+                  <p>Responsable statistiques</p>
+                  <ul>
+                    <li>En charge</li>
+                  </ul>
+                  <p>Technologies : Eclipse, Java EE, Perl, MySQL</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Juillet 2009 à Octobre 2009</td>
+                <td>
+                  <p>Développeur IHM</p>
+                  <ul>
+                    <li></li>
+                  </ul>
+                  <p>Technologies : Eclipse, Java EE</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Janvier 2009 à Juin 2009</td>
+                <td>
+                  <p>Développeur provisionning</p>
+                  <ul>
+                    <li>Responsable de l'approvisionnement des boîtes mail</li>
+                  </ul>
+                  <p>Technologies : Eclipse, Java</p>
+                </td>
+              </tr>
+              <tr>
+                <th><img alt="Astek" src="img/bio/logo-astek.png"/></th>
+                <th><h2>Consultant Java / C / PHP</h2></th>
+              </tr>
+              <tr>
+                <td>Octobre 2006 à Juin 2007</td>
+                <td>
+                  <p>Développeur Java</p>
+                  <ul>
+                    <li>Responsable de l'approvisionnement des boîtes mail</li>
+                  </ul>
+                  <p>Technologies : Eclipse, Java</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Janvier 2009 à Juin 2009</td>
+                <td>
+                  <p>Développeur provisionning</p>
+                  <ul>
+                    <li>Responsable de l'approvisionnement des boîtes mail</li>
+                  </ul>
+                  <p>Technologies : Eclipse, Java</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+		  
+      <section id="about">
+        <div class="row">
+          <div class="span12">
+            <div class="page-header">
+              <h1>A propos <small>du site</small></h1>  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <p>Ce site n'est pas motivé par un égocentrisme exacerbé mais a simplement pour but de centraliser les différents travaux que j'ai mené et qui sont pubié sur Internet.</p>
+            <p>Pour la forme, étant un développeur Web, j'ai tenté de faire un site propre et clair avec des technologies modernes, j'ai donc utilisé Twitter Bootstrap. Je n'ai par contre aucune prédisposition graphique, je me contente donc ici du design standard.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <footer>
+        <p>Créé avec GitHub Pages et Twitter Bootstrap</p>
       </footer>
+
     </div>
 
-    
-
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/underscore.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
