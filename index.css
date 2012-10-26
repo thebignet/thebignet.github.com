@@ -1,5 +1,6 @@
-/* swiip.github.com */
+/* thebignet.github.com */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 body {
   padding-top: 10px;
@@ -36,8 +37,16 @@ body {
 }
  
 .hero-unit h1 {
-  font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-bottom: 20px;
+}
+
+.hero-unit h1 span.light {
+  font-weight: 100;
+}
+
+.hero-unit h1 span.strong {
+  font-weight: 400;
 }
 
 .hero-unit img {
