@@ -35,13 +35,6 @@ body {
   }
 }
  
-/* Large desktop */
-@media (min-width: 1200px) {
-  .hero-unit {
-    background: #b11016 url("img/consultant.png") no-repeat -80px 40px; 
-  }
-}
-
 .hero-unit h1 {
   font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-bottom: 20px;
@@ -70,8 +63,13 @@ body {
   vertical-align: middle;
 }
 
+#bio table tr th {
+  border-top: 1px solid black;
+}
+
 #bio table td img {
   float: right;
+  margin: 5px;
 }
 
 /* Subnav */

@@ -34,7 +34,6 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <img src="img/logo-open.png" />
         <h1>Jean Detoeuf</h1>
         <p>Je suis consultant Open dans les technologies du monde Java EE et du Web.</p>
         <p>Cette page a pour but de me présenter et de centraliser toutes les références me concernant.</p>
@@ -100,7 +99,7 @@
         <div class="row">
           <div class="span12">
             <div class="page-header">
-              <h1>Publications <small>Twitter et articles</small></h1>  
+              <h1>Publications <small>Twitter et Github</small></h1>  
             </div>
           </div>
         </div>
@@ -113,6 +112,20 @@
                   <tr>
                     <td><img src="<%= tweet.user.profile_image_url %>"></td>
                     <td><%= tweet.text %></td>
+                  </tr>
+                <% }); %>
+              </table>
+            </script>
+          </div>
+          <div class="span6 github">
+            <script id="github-template" type="text/x-undrescore-tmpl">
+              <table class="table">
+                <tr><th colspan="2">Github</th></tr>
+                <tr><th>Project</th><th>Commit</th></tr>
+                <% _.each(data, function(commit) { %>
+                  <tr>
+                    <td><%= commit.repository.name %></td>
+                    <td><%= commit.payload.shas[0][2] %></td>
                   </tr>
                 <% }); %>
               </table>
@@ -132,48 +145,165 @@
           <div class="span12">
             <table class="table table-bordered">
               <tr>
-                <th><img alt="Open" src="img/bio/logo-open.png"/></th>
+                <th><a href="http://www.open-groupe.com/"><img alt="Open" src="img/bio/logo-open.png"/></a></th>
                 <th><h2>Consultant JEE / Web</h2></th>
               </tr>
               <tr>
                 <td>Depuis Janvier 2011</td>
                 <td>
-                  <p>Intégration d'une équipe de développement.</p>
-                  <p>Technologies : Java EE, Spring, Struts, JPA, Hibernate, jQuery, Backbone.js, Eclipse, Maven, MySQL, Oracle.</p>
+                  <a href="http://www.monecam.com/web/monecam"><img alt="Open" src="img/bio/logo-monecam.png"/></a>
+                  <p>J'ai intégré une équipe de développement afin de participer aux projets en cours dans cette société spécialisée dans les terminaux de paiement, les services et les flux bancaires.  J'ai travaillé en parallèle sur des sujets et technologies très diverses (voir ci-dessous).  J'ai pu prendre en main l'architecture et la conception des nouveaux projets ainsi que les évolutions des projets existants, pour ensuite choisir les briques technologies nécessaires à leurs réalisation.</p>
+                  <p>Toujours dans un but de qualité, j'ai pris l'initiative de mettre en place une méthode de gestion des sources ainsi qu'une plateforme d'intégration continue, permettant ainsi d'industrialiser les livrables, de vérifier la qualité du code et d'effectuer les tests unitaires nécessaires à la non régression.</p>
+                  <p><strong>Technologies :</strong>
+                    <ul>
+                      <li>Langages/Frameworks serveur/batch :
+                        <span class="label">Java EE</span>
+                        <span class="label">Unix shell</span>
+                        <span class="label">Spring (framework, security)</span>
+                        <span class="label">Grails</span>
+                        <span class="label">Struts</span>
+                        <span class="label">JPA</span>
+                        <span class="label">Hibernate</span>
+                        <span class="label">SVI(jtapi)</span>
+                        <span class="label">Perl</span>
+                        <span class="label">Tapestry</span>
+                      </li>
+                      <li>Langagues/Framework web :
+                        <span class="label">HTML5</span>
+                        <span class="label">CSS3</span>
+                        <span class="label">Javascript</span>
+                        <span class="label">jQuery</span>
+                        <span class="label">Prototype</span>
+                        <span class="label">Backbone.js</span>
+                        <span class="label">Knockout.js</span>
+                        <span class="label">Sencha</span>
+                      </li>
+                      <li>Serveurs/Conteneurs :
+                        <span class="label">Apache</span>
+                        <span class="label">Tomcat</span>
+                        <span class="label">Liferay</span>
+                        <span class="label">Jetty</span>
+                      </li>
+                      <li>Bases de données :
+                        <span class="label">MySQL</span>
+                        <span class="label">Oracle</span>
+                      </li>
+                      <li>Gestion des sources/intégration :
+                        <span class="label">Eclipse</span>
+                        <span class="label">Maven</span>
+                        <span class="label">SVN</span>
+                        <span class="label">Git</span>
+                        <span class="label">Hudson/Jenkins</span>
+                        <span class="label">Nexus repository</span>
+                        <span class="label">Cron</span>
+                      </li>
+                      <li>Gestionnaire de bugs :
+                        <span class="label">Bugzilla</span>
+                        <span class="label">HP ALM</span>
+                      </li>
+                      <li>Divers :
+                        <span class="label">Talend</span>
+                        <span class="label">Formation Lexsi sécurité informatique</span>
+                        <span class="label">Talend</span>
+                        <span class="label">Twitter bootstrap</span>
+                      </li>
+                    </ul>
+                  </p>
                 </td>
               </tr>
               <tr>
-                <th><img alt="Atos Worldline" src="img/bio/logo-atosworldline.png"/></th>
-                <th><h2>Développeur / Expert</h2></th>
+                <th><a href="http://www.atosworldline.fr/"><img alt="Atos Worldline" src="img/bio/logo-atosworldline.png"/></a></th>
+                <th><h2>Développeur / Expert / Responsable statistiques</h2></th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <p>J’ai contribué à un système de <strong>messagerie</strong> de type « webmail » pour le compte de plusieurs clients FAI et mobiles. De grande ampleur, ce système fait intervenir une multitude d’équipes ainsi que de ressources matérielles. Mes connaissances du métier de production ont beaucoup évoluées.</p>
+                  <p>Moteur au sein du back office, j'ai participé au développement du système d'approvisionnement du webmail</p>
+                  <p>J'ai également implémenté de nouvelles fonctionnalités au sein du webmail, telles la gestion de l'antispam ou des listes rouge et verte.</p>
+                  <p>Responsable de la plateforme <strong>statistiques</strong>, j'ai corrigé et optimisé le calcul des statistiques du webmail en séparant les traitements sur plusieurs serveurs</p>
+                  <p>Pour chaque service du webmail, j'ai participé à toutes les étapes, notamment :
+                    <ul>
+                      <li>développements</li>
+                      <li>recette interne</li>
+                      <li>mise en production</li>
+                    </ul>
+                  <p>J’ai également contribué à une offre d’hébergement de sites web destinée aux professionnels, comprenant la mise à disposition d’un serveur Apache avec module PHP, d’une base de données MySQL, et d’un accès un espace de stockage par FTP. J’ai conçu et réalisé la configuration de ces modules en proposant un webservice permettant leur approvisionnement.</p>
+                  <p>Le détail de mes participations à la messagerie est indiqué ci-dessous.</p>
+                  <p><strong>Technologies :</strong>
+                    <ul>
+                      <li>Langages/Frameworks serveur/batch :
+                        <span class="label">Java EE</span>
+                        <span class="label">Unix shell</span>
+                        <span class="label">JPA</span>
+                        <span class="label">Hibernate</span>
+                        <span class="label">Perl</span>
+                        <span class="label">Tapestry</span>
+                        <span class="label">PHP</span>
+                      </li>
+                      <li>Langagues/Framework web :
+                        <span class="label">HTML5</span>
+                        <span class="label">CSS3</span>
+                        <span class="label">Javascript</span>
+                        <span class="label">jQuery</span>
+                        <span class="label">Dojo</span>
+                      </li>
+                      <li>Serveurs/Conteneurs :
+                        <span class="label">Apache</span>
+                        <span class="label">Tomcat</span>
+                      </li>
+                      <li>Bases de données :
+                        <span class="label">MySQL</span>
+                      </li>
+                      <li>Gestion des sources/intégration :
+                        <span class="label">Eclipse</span>
+                        <span class="label">Maven</span>
+                        <span class="label">SVN</span>
+                        <span class="label">Cron</span>
+                      </li>
+                      <li>Gestionnaire de bugs :
+                        <span class="label">Mantis</span>
+                        <span class="label">ClearQuest</span>
+                      </li>
+                      <li>Divers :
+                        <span class="label">Cyrus</span>
+                        <span class="label">Postfix</span>
+                        <span class="label">JUnit</span>
+                      </li>
+                    </ul>
+                  </p>
+                </td>
               </tr>
               <tr>
                 <td>Octobre 2009 à Décembre 2010</td>
                 <td>
-                  <p>Responsable statistiques</p>
+                  <a href="http://www.sfr.fr/mobile/offres-professionnels.jspe"><img alt="SFR Pro" src="img/bio/logo-sfr-pro.png"/></a>
+                  <a href="http://www.sfr.fr"><img alt="SFR" src="img/bio/logo-sfr.png"/></a>
                   <ul>
-                    <li>En charge</li>
+                    <li>Responsable statistiques messagerie</li>
+                    <li>Développeur IHM</li>
+                    <li>Développeur provisionning</li>
                   </ul>
-                  <p>Technologies : Eclipse, Java EE, Perl, MySQL</p>
                 </td>
               </tr>
               <tr>
                 <td>Juillet 2009 à Octobre 2009</td>
                 <td>
-                  <p>Développeur IHM</p>
+                  <a href="http://www.laposte.net/"><img alt="La Poste" src="img/bio/logo-laposte.png"/></a>
+                  <a href="http://www.mobistar.be/fr"><img alt="Mobistar" src="img/bio/logo-mobistar.png"/></a>
                   <ul>
-                    <li></li>
+                    <li>Développeur IHM</li>
+                    <li>Développeur provisionning</li>
                   </ul>
-                  <p>Technologies : Eclipse, Java EE</p>
                 </td>
               </tr>
               <tr>
                 <td>Janvier 2009 à Juin 2009</td>
                 <td>
-                  <p>Développeur provisionning</p>
+                  <a href="http://www.orange.fr"><img alt="Orange" src="img/bio/logo-orange.png"/></a>
                   <ul>
-                    <li>Responsable de l'approvisionnement des boîtes mail</li>
+                    <li>Développeur provisionning</li>
                   </ul>
-                  <p>Technologies : Eclipse, Java</p>
                 </td>
               </tr>
               <tr>
@@ -183,21 +313,67 @@
               <tr>
                 <td>Octobre 2006 à Juin 2007</td>
                 <td>
+                  <a href="http://www.ti.com/"><img alt="Texas Instruments" src="img/bio/logo-texas-instruments.png"/></a>
                   <p>Développeur Java</p>
-                  <ul>
-                    <li>Responsable de l'approvisionnement des boîtes mail</li>
-                  </ul>
-                  <p>Technologies : Eclipse, Java</p>
+                  <p>Partant d'un cahier des charges réduits, j'ai récolté les demandes des différents chefs d'équipe afin de créer une interface en PHP/MySQL. Celle-ci permet aux utilisateurs de saisir leur dates de début et de fin prévisionnelle de projet afin que les différentes équipes du processus de fabrication des chips puisent se synchroniser et ainsi améliorer le temps entre la conception et la fabrication des chips.</p>
+                  <p>Un dashboard est aussi prévu pour superviser les différents projets et déceler les projets trop longs.</p>
+                  <p><strong>Technologies :</strong>
+                    <ul>
+                      <li>Langages/Frameworks serveur/batch :
+                        <span class="label">PHP</span>
+                        <span class="label">Java EE</span>
+                        <span class="label">Unix shell</span>
+                        <span class="label">Perl</span>
+                      </li>
+                      <li>Langagues/Framework web :
+                        <span class="label">HTML4</span>
+                        <span class="label">CSS2</span>
+                        <span class="label">Javascript</span>
+                        <span class="label">jQuery</span>
+                      </li>
+                      <li>Serveurs/Conteneurs :
+                        <span class="label">Apache</span>
+                      </li>
+                      <li>Bases de données :
+                        <span class="label">MySQL</span>
+                      </li>
+                      <li>Gestion des sources/intégration :
+                        <span class="label">ClearCase</span>
+                      </li>
+                    </ul>
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td>Janvier 2009 à Juin 2009</td>
                 <td>
-                  <p>Développeur provisionning</p>
+                  <a href="http://www.amadeus.net/"><img alt="Amadeus" src="img/bio/logo-amadeus.png"/></a>
+                  <p>Développeur C/Java</p>
+                  <p>J’ai contribué au développement d’une interface en Java visant à gérer les règles de tarification des compagnies aériennes.</p>
+                  <p>Fort de mon expérience sur ce projet, je suis devenu référent technique vis à vis du client. C'est ainsi que j'ai pu apporter mon avis sur les spécifications des projets futurs.</p>
+                  <p>L'interface de ce projet communique avec le système Amadeus par le biais d'un serveur en C. J'ai participé au développement de ce serveur. La rapidité est un facteur très important pour Amadeus. C'est pourquoi j'ai également contribué à son optimisation pour qu'il soit plus rapide</p>
                   <ul>
-                    <li>Responsable de l'approvisionnement des boîtes mail</li>
+                    <li>Responsable serveur FareXpert</li>
+                    <li>Développeur Java/Swing</li>
                   </ul>
-                  <p>Technologies : Eclipse, Java</p>
+                  <p><strong>Technologies :</strong>
+                    <ul>
+                      <li>Langages/Frameworks serveur/batch :
+                        <span class="label">C</span>
+                        <span class="label">Java</span>
+                        <span class="label">Unix shell</span>
+                      </li>
+                      <li>Langagues/Framework IHM :
+                        <span class="label">Swing</span>
+                      </li>
+                      <li>Bases de données :
+                        <span class="label">MySQL</span>
+                      </li>
+                      <li>Gestion des sources/intégration :
+                        <span class="label">SVN</span>
+                      </li>
+                    </ul>
+                  </p>
                 </td>
               </tr>
             </table>
@@ -215,8 +391,7 @@
         </div>
         <div class="row">
           <div class="span12">
-            <p>Ce site n'est pas motivé par un égocentrisme exacerbé mais a simplement pour but de centraliser les différents travaux que j'ai mené et qui sont pubié sur Internet.</p>
-            <p>Pour la forme, étant un développeur Web, j'ai tenté de faire un site propre et clair avec des technologies modernes, j'ai donc utilisé Twitter Bootstrap. Je n'ai par contre aucune prédisposition graphique, je me contente donc ici du design standard.</p>
+            <p>Ce site a pour but de rassembler ma biographie professionnelle et ma présence sur le web.  Il sert de vitrine pour d'éventuels recruteurs afin de mieux se renseigner sur mes capacités et motivations.</p>
           </div>
         </div>
       </section>
