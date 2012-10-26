@@ -9,14 +9,14 @@ body {
 .hero-unit {
   color: white;
   padding-left: 200px;
-  background: #b11016 url("img/consultant.png") no-repeat -80px 70px; 
+  background: rgba(66, 52, 170, 0.9) url("img/bio/profile.png") no-repeat bottom left; 
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .hero-unit {
     padding-left: 60px;
-    background: #b11016 -80px 40px; 
+    background: rgba(66, 52, 170, 0.9); 
   }
 }
  
@@ -24,14 +24,14 @@ body {
 @media (max-width: 767px) {
   .hero-unit {
     padding-left: 60px;
-    background: #b11016 -80px 40px; 
+    background: rgba(66, 52, 170, 0.9); 
   }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .hero-unit {
-    background: #b11016 url("img/consultant.png") no-repeat -80px 160px; 
+    background: rgba(66, 52, 170, 0.9) url("img/bio/profile.png") no-repeat bottom left; 
   }
 }
  
@@ -52,6 +52,10 @@ body {
 
 #contacts table th, #contacts table td {
   vertical-align: middle;
+}
+
+#contacts th {
+  min-width: 20px;
 }
 
 #os img {
