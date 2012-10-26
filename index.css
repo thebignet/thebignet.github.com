@@ -29,7 +29,7 @@ body {
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 980px) {
   .hero-unit {
     background: rgba(66, 52, 170, 0.9) url("img/bio/profile.png") no-repeat bottom left; 
   }
@@ -74,6 +74,36 @@ body {
 #bio table td img {
   float: right;
   margin: 5px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  #bio table td img {
+    height: 40px;
+  }
+  #bio table th {
+    max-width: 40px;
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  #bio table td img {
+    height: 50px;
+  }
+  #bio table th {
+    max-width: 50px;
+  }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 980px) {
+  #bio table td img {
+    height: 60px;
+  }
+  #bio table th {
+    max-width: 60px;
+  }
 }
 
 /* Subnav */
