@@ -10,7 +10,7 @@ body {
 .hero-unit {
   color: white;
   padding-left: 200px;
-  background: rgba(66, 52, 170, 0.9) url("img/bio/profile.png") no-repeat bottom left; 
+  background: rgba(66, 52, 170, 0.9); 
 }
 
 /* Landscape phones and down */
@@ -32,7 +32,7 @@ body {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 980px) {
   .hero-unit {
-    background: rgba(66, 52, 170, 0.9) url("img/bio/profile.png") no-repeat bottom left; 
+    background: rgba(66, 52, 170, 0.9); 
   }
 }
  
