@@ -56,7 +56,28 @@ body {
 
 #contacts table {
   width: auto;
-  margin: auto;
+}
+
+#contacts div {
+  padding: 10px 20px;
+}
+
+#contacts dl {
+  margin:0 0 0 36px;
+  position: relative;
+  display: inline-block;
+}
+
+#contacts dd {
+  margin:0;
+}
+
+#contacts dd.logo {
+  margin:0;
+  position: absolute;
+  top: 2px;
+  left: -35px;
+  width: 35px;
 }
 
 #contacts table th, #contacts table td {
