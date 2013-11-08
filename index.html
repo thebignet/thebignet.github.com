@@ -63,41 +63,43 @@
               <h1>Contacts <small>Toutes les références sociales</small></h1>  
             </div>
             <div>
-              <dl>
-                <dt>Gmail</dt>
-                <dd>thebignet at gmail dot com</dd>
-                <dd class="logo"><img src="img/contacts/logo-gmail.png"/></dd>
-              </dl>
-              <dl>
-                <dt>Twitter</dt>
-                <dd><a href="https://twitter.com/thebignet" target="_blank">@thebignet</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-twitter.png"/></dd>
-              </dl>
-              <dl>
-                <dt>GitHub</dt>
-                <dd><a href="https://github.com/thebignet" target="_blank">Github</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-github.png"/></dd>
-              </dl>
-              <dl>
-                <dt>LinkedIn</dt>
-                <dd><a href="http://lnkd.in/Xrsazj" target="_blank">Jean Detoeuf</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-linkedin.png"/></dd>
-              </dl>
-              <dl>
-                <dt>Viadeo</dt>
-                <dd><a href="http://www.viadeo.com/fr/profile/jean.detoeuf" target="_blank">Jean Detoeuf</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-viadeo.png"/></dd>
-              </dl>
-              <dl>
-                <dt>Facebook</dt>
-                <dd><a href="https://www.facebook.com/jean.detoeuf" target="_blank">Jean Detoeuf</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-facebook.png"/></dd>
-              </dl>
-              <dl>
-                <dt>Google Plus</dt>
-                <dd><a href="https://plus.google.com/102985277746701355604/" target="_blank">Google Plus</a></dd>
-                <dd class="logo"><img src="img/contacts/logo-googleplus.png"/></dd>
-              </dl>
+              <table class="table table-bordered table-condensed">
+                <tr>
+                  <th>Gmail</th>
+                  <td>thebignet at gmail dot com</td>
+                  <td class="logo"><img src="img/contacts/logo-gmail.png"/></td>
+                </tr>
+                <tr>
+                  <th>Twitter</th>
+                  <td><a href="https://twitter.com/thebignet" target="_blank">@thebignet</a></td>
+                  <td class="logo"><img src="img/contacts/logo-twitter.png"/></td>
+                </tr>
+                <tr>
+                  <th>GitHub</th>
+                  <td><a href="https://github.com/thebignet" target="_blank">Github</a></td>
+                  <td class="logo"><img src="img/contacts/logo-github.png"/></td>
+                </tr>
+                <tr>
+                  <th>LinkedIn</th>
+                  <td><a href="http://lnkd.in/Xrsazj" target="_blank">Jean Detoeuf</a></td>
+                  <td class="logo"><img src="img/contacts/logo-linkedin.png"/></td>
+                </tr>
+                <tr>
+                  <th>Viadeo</th>
+                  <td><a href="http://www.viadeo.com/fr/profile/jean.detoeuf" target="_blank">Jean Detoeuf</a></td>
+                  <td class="logo"><img src="img/contacts/logo-viadeo.png"/></td>
+                </tr>
+                <tr>
+                  <th>Facebook</th>
+                  <td><a href="https://www.facebook.com/jean.detoeuf" target="_blank">Jean Detoeuf</a></td>
+                  <td class="logo"><img src="img/contacts/logo-facebook.png"/></td>
+                </tr>
+                <tr>
+                  <th>Google Plus</th>
+                  <td><a href="https://plus.google.com/102985277746701355604/" target="_blank">Google Plus</a></td>
+                  <td class="logo"><img src="img/contacts/logo-googleplus.png"/></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -107,28 +109,14 @@
         <div class="row">
           <div class="span12">
             <div class="page-header">
-              <h1>Publications <small>Twitter et Github</small></h1>  
+              <h1>Commits <small>Github</small></h1>  
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="span6 tweets">
-            <script id="twitter-template" type="text/x-undrescore-tmpl">
-              <table class="table">
-                <tr><th colspan="2">Twitter</th></tr>
-                <% _.each(data, function(tweet) { %>
-                  <tr>
-                    <td><img src="<%= tweet.user.profile_image_url %>"></td>
-                    <td><%= tweet.text %></td>
-                  </tr>
-                <% }); %>
-              </table>
-            </script>
-          </div>
           <div class="span6 github">
             <script id="github-template" type="text/x-undrescore-tmpl">
               <table class="table">
-                <tr><th colspan="2">Github</th></tr>
                 <tr><th>Project</th><th>Commit</th></tr>
                 <% _.each(data, function(commit) { %>
                   <tr>
